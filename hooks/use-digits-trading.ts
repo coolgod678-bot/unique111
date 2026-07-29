@@ -88,7 +88,7 @@ export function useDigitsTrading({ ws, isConnected, isExhausted, isAuthenticated
   const [tradeType, setTradeTypeRaw] = useState<TradeType>('matches-differs');
   const [contractMode, setContractMode] = useState<ContractMode>('DIGITMATCH');
   const [selectedDigit, setSelectedDigit] = useState<number>(5);
-  const [stake, setStake] = useState<string>('10');
+  const [stake, setStake] = useState<string>('1');
   const [duration, setDuration] = useState<number>(5);
 
   // Reset contract mode to the first option of the selected trade type
