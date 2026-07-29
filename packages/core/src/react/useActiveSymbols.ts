@@ -41,7 +41,7 @@ export function useActiveSymbols(
   const [contracts, setContracts] = useState<ContractInfo[]>([]);
   const [contractsAvailable, setContractsAvailable] = useState(false);
   const [durationLimits, setDurationLimits] = useState<DurationLimits>({ min: 1, max: 10, unit: 't' });
-  const [defaultStake, setDefaultStake] = useState<number>(10);
+  const [defaultStake, setDefaultStake] = useState<number>(1);
   const [isLoading, setIsLoading] = useState(true);
 
   const loadContractsFor = useCallback(async (wsInstance: DerivWS, symbol: ActiveSymbol) => {
